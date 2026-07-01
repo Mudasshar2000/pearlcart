@@ -2,7 +2,21 @@
 
 A premium e-commerce platform with Apple-style glassmorphic design, Google Sheets as a live product database, and a separate Warehouse Management System (WMS) — all in plain HTML/CSS/JS.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-teal?style=for-the-badge)](https://YOUR_USERNAME.github.io/pearlcart/pearlcart-store.html)
+---
+
+## 🔗 Live Site Links
+
+> **Replace `Mudasshar2000` with your actual GitHub username in the links below.**
+
+| | Link |
+|--|------|
+| 🛍️ **Customer Storefront** | [Mudasshar2000.github.io/pearlcart/pearlcart-store.html](https://Mudasshar2000.github.io/pearlcart/pearlcart-store.html) |
+| 🏭 **WMS / Admin Panel** | [Mudasshar2000.github.io/pearlcart/pearlcart-wms.html](https://Mudasshar2000.github.io/pearlcart/pearlcart-wms.html) |
+
+> ⚠️ **Note:** The `github.com/Mudasshar2000/pearlcart` link is your **code repository** (this page).
+> The `github.io` links above are your **live website** — that's what you share with customers.
+
+---
 
 ---
 
@@ -47,7 +61,7 @@ pearlcart/
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/pearlcart.git
+git clone https://github.com/Mudasshar2000/pearlcart.git
 cd pearlcart
 ```
 
@@ -77,7 +91,7 @@ See [`pearlcart-setup-guide.md`](./pearlcart-setup-guide.md) for the full step-b
 4. Click **Save**
 5. Your store will be live at:
    ```
-   https://YOUR_USERNAME.github.io/pearlcart/pearlcart-store.html
+   https://Mudasshar2000.github.io/pearlcart/pearlcart-store.html
    ```
 
 > **Note:** GitHub Pages serves static files — the Google Sheets integration still works perfectly since it uses a fetch call to your Apps Script URL.
