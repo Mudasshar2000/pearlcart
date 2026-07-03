@@ -979,7 +979,7 @@ function openDetail(id) {
       <span class="pill">${cat}</span>
       <span class="pill">${p.type==='digital'?'⚡ Digital Download':'📦 Physical Product'}</span>
       <span class="pill">SKU: ${p.sku}</span>
-      ${s==='low'?`<span class="pill" style="background:rgba(255,178,52,0.35);color:#92400E;">Only ${p.stock} left</span>`:''}
+      ${s==='low'?`<span class="pill" style="background:rgba(255,178,52,0.35);color:#fce3d4;">Only ${p.stock} left</span>`:''}
       ${s==='out'?`<span class="pill" style="background:rgba(192,57,43,0.3);color:#7A2418;">Out of Stock</span>`:''}
     </div>
     <div class="detail-price">$${parseFloat(p.price).toFixed(2)}</div>
