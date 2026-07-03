@@ -670,7 +670,7 @@ async function loadProducts() {
   const grid = document.getElementById('productGrid');
   grid.innerHTML = `<div class="loading-screen" style="grid-column:1/-1">
     <div class="spinner"></div>
-    <div class="loading-text">Loading products from Google Sheets…</div>
+    <div class="loading-text">Loading products…</div>
   </div>`;
 
   // ── URL NOT SET ──
@@ -710,7 +710,7 @@ async function loadProducts() {
     setDataSource(true, `Live · ${products.length} products · refreshed at ${now}`);
     buildCatNav();
     renderGrid(products);
-    toast(`✓ ${products.length} products loaded from Google Sheets`, 'ok');
+    toast(`✓ ${products.length} products loaded`, 'ok');
 
   } catch (err) {
     console.warn('Sheet fetch failed:', err.message);
