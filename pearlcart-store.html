@@ -1453,7 +1453,7 @@ function calcTotals() {
   const sub     = cart.reduce((s, c) => { const p = products.find(x => x.id === c.id); return s + (p ? parseFloat(p.price) * c.qty : 0); }, 0);
   const hasPhys = cart.some(c => { const p = products.find(x => x.id === c.id); return p && p.type === 'physical'; });
   const disc = 0;
-  const ship = hasPhys && sub > 0 ? 450 : 0;
+  const ship = sub > 0 ? 450 : 0;
   return {sub, disc, ship, total: sub + ship};
 }
 
@@ -1506,7 +1506,7 @@ function renderCart() {
   const t = calcTotals();
   document.getElementById('s-sub').textContent  = fmt(t.sub);
   document.getElementById('s-disc').textContent = fmt(t.disc);
-  document.getElementById('s-ship').textContent = t.ship ? fmt(t.ship) : 'Free';
+  document.getElementById('s-ship').textContent = fmt(450);
   document.getElementById('s-total').textContent= fmt(t.total);
 }
 
@@ -1521,7 +1521,7 @@ function renderCheckout() {
   }).join('') || '<div style="color:var(--ink-light);font-size:14px;">No items.</div>';
   document.getElementById('co-sub').textContent  = fmt(t.sub);
   document.getElementById('co-disc').textContent = fmt(t.disc);
-  document.getElementById('co-ship').textContent = t.ship ? fmt(t.ship) : 'Free';
+  document.getElementById('co-ship').textContent = fmt(450);
   document.getElementById('co-total').textContent= fmt(t.total);
 }
 
